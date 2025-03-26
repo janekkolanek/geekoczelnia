@@ -1,6 +1,6 @@
 # geekoczelnia
 
-This project was developed together with two of my colleagues for the "Introduction to Programming in Python" course. It was created as part of our course assessment using the Flask framework.
+This project was developed together with two of my colleagues for the "Podstawy programowania w języku PYTHON" course. It was created as part of our course assessment using the Flask framework.
 
 Technologies Used:
 Flask (Python) – for backend development
