@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nazwa": "Cyberbezpieczeństwo I Analiza Ryzyka",
+        "typ": "Dzienne",
+        "opis": "Kierunek dedykowany osobom pragnącym chronić systemy informatyczne przed zagrożeniami w cyberprzestrzeni. Studenci uczą się technik wykrywania, analizowania i zapobiegania atakom hakerskim, projektowania bezpiecznych sieci oraz zarządzania ryzykiem w organizacjach. Program obejmuje kryptografię, testy penetracyjne, analizę incydentów bezpieczeństwa oraz prawne aspekty ochrony danych. Absolwenci są przygotowani do pracy jako specjaliści ds. cyberbezpieczeństwa w sektorze publicznym i prywatnym."
+    },
+    {
+        "id": 2,
+        "nazwa": "Cyberbezpieczeństwo I Analiza Ryzyka",
+        "typ": "Zaoczne",
+        "opis": "Kierunek dedykowany osobom pragnącym chronić systemy informatyczne przed zagrożeniami w cyberprzestrzeni. Studenci uczą się technik wykrywania, analizowania i zapobiegania atakom hakerskim, projektowania bezpiecznych sieci oraz zarządzania ryzykiem w organizacjach. Program obejmuje kryptografię, testy penetracyjne, analizę incydentów bezpieczeństwa oraz prawne aspekty ochrony danych. Absolwenci są przygotowani do pracy jako specjaliści ds. cyberbezpieczeństwa w sektorze publicznym i prywatnym."
+    },
+    {
+        "id": 3,
+        "nazwa": "Inżynieria Danych I Sztuczna Inteligencja",
+        "typ": "Dzienne",
+        "opis": "Kierunek koncentruje się na przetwarzaniu dużych zbiorów danych oraz tworzeniu inteligentnych algorytmów do ich analizy. Studenci zdobywają umiejętności w zakresie programowania, budowy modeli uczenia maszynowego, analizy danych oraz zarządzania infrastrukturą Big Data. Zajęcia obejmują takie tematy jak przetwarzanie języka naturalnego, systemy rekomendacyjne i analiza predykcyjna. Absolwenci są przygotowani do pracy jako analitycy danych, inżynierowie AI lub konsultanci w firmach technologicznych."
+    },
+    {
+        "id": 4,
+        "nazwa": "Inżynieria Danych I Sztuczna Inteligencja",
+        "typ": "Zaoczne",
+        "opis": "Kierunek koncentruje się na przetwarzaniu dużych zbiorów danych oraz tworzeniu inteligentnych algorytmów do ich analizy. Studenci zdobywają umiejętności w zakresie programowania, budowy modeli uczenia maszynowego, analizy danych oraz zarządzania infrastrukturą Big Data. Zajęcia obejmują takie tematy jak przetwarzanie języka naturalnego, systemy rekomendacyjne i analiza predykcyjna. Absolwenci są przygotowani do pracy jako analitycy danych, inżynierowie AI lub konsultanci w firmach technologicznych."
+    },
+    {
+        "id": 5,
+        "nazwa": "Robotyka I Systemy Autonomiczne",
+        "typ": "Dzienne",
+        "opis": "Kierunek skupia się na projektowaniu, programowaniu i integracji robotów oraz inteligentnych systemów autonomicznych. Studenci uczą się budowy mechanizmów, sterowania urządzeniami oraz wykorzystywania sensorów i algorytmów sztucznej inteligencji w systemach autonomicznych. Program obejmuje zagadnienia takie jak roboty mobilne, Internet Rzeczy (IoT) czy automatyzacja procesów przemysłowych. Absolwenci znajdują zatrudnienie w branżach takich jak przemysł, logistyka, transport czy badania kosmiczne, gdzie wykorzystuje się nowoczesne technologie autonomiczne."
+    },
+    {
+        "id": 6,
+        "nazwa": "Robotyka I Systemy Autonomiczne",
+        "typ": "Zaoczne",
+        "opis": "Kierunek skupia się na projektowaniu, programowaniu i integracji robotów oraz inteligentnych systemów autonomicznych. Studenci uczą się budowy mechanizmów, sterowania urządzeniami oraz wykorzystywania sensorów i algorytmów sztucznej inteligencji w systemach autonomicznych. Program obejmuje zagadnienia takie jak roboty mobilne, Internet Rzeczy (IoT) czy automatyzacja procesów przemysłowych. Absolwenci znajdują zatrudnienie w branżach takich jak przemysł, logistyka, transport czy badania kosmiczne, gdzie wykorzystuje się nowoczesne technologie autonomiczne."
+    }
+]

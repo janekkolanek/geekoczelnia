@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Wykładowcy</title>
+    <link rel="icon" href="/static/css/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+<body>
+
+<!--------------------------------------------------------------------HEADER------------------------------------------------------------------->
+
+    <header>
+        <div class="info">
+            <img src="/static/css/geekoczelnia banner.png" alt="GEEKoczelnia banner">
+        </div>
+    
+        <div class="flash">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <ul class="flash-messages">
+                    {% for category, message in messages %}
+                        <li class="{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+        {% endwith %}
+        </div>
+        
+        <div class="contact">
+            <form method="POST" action="/contact">
+                <button type="submit">Kontakt</button>
+            </form>
+        </div>
+    </header>
+
+
+<!--------------------------------------------------------------------GŁÓWNY PANEL-------------------------------------------------------------------->
+<div class="container">
+
+    <div class="panel" >
+        <div class="avatar">
+            <img src="{{ zdjecie }}" alt="Przesłane zdjęcie">
+        </div>
+        <h1>Witaj, {{ user.imie }} {{ user.nazwisko }}!</h1>
+
+        <form method="POST" action="/dashboard_wykladowca">
+            <button name="view" value="home" type="submit">Strona główna</button>
+            <button name="view" value="zajecia" type="submit">Zajecia</button>
+            <button name="view" value="grupy" type="submit">Twoje grupy</button>
+            <button name="view" value="calendar" type="submit">Kalendarz</button>
+            <button name="view" value="wiadomosci" type="submit">Wiadomości</button>
+            <button name="view" value="dane" type="submit">Edytuj dane</button>
+        </form><br>
+        <form action="{{ url_for('geekoczelnia.logout') }}" method="post">
+            <button type="submit">Wyloguj się</button>
+        </form>
+        
+    </div>
+<!--------------------------------------------------------------------HOME-------------------------------------------------------------------->
+    <div class="content {% if selected_view == 'home' %}visible{% endif %}">
+        <h2>Strona główna</h2>
+        <p>Wybierz opcję z panelu, aby zobaczyć odpowiedni widok.</p>
+    </div>
+<!--------------------------------------------------------------------LISTA ZAJĘĆ-------------------------------------------------------------------->
+    <div class="content {% if selected_view == 'zajecia' %}visible{% endif %}">
+        <h2>Lista twoich zajęć</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Przedmiot</th>
+                    <th>Grupa</th>
+                    <th>Sala</th>
+                    <th>Data</th>
+                    <th>Godzina</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for przedmiot in przedmioty1 %}
+                    {% for zajecie in zajecia %}
+                        {% if zajecie.przedmiot_id | int == przedmiot.id %}
+                            <tr>
+                                <td>{{ przedmiot.nazwa }}</td>
+                                {% for grupa in grupy %}
+                                    {% if grupa.id == zajecie.grupa_id | int %}
+                                        <td>{{ grupa.nazwa }}</td>
+                                    {% endif %}
+                                {% endfor %}
+                                <td>{{ zajecie.sala }}</td>
+                                <td>
+                                    {% if zajecie.rozpoczecie %}
+                                        {{ zajecie.rozpoczecie.split('T')[0] }}
+                                    {% else %}
+                                        Brak danych
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if zajecie.rozpoczecie and zajecie.zakonczenie %}
+                                        {% set godzina_rozpoczecia = zajecie.rozpoczecie.split('T')[1][:5] %}
+                                        {% set godzina_zakonczenia = zajecie.zakonczenie.split('T')[1][:5] %}
+                                        {{ godzina_rozpoczecia }} - {{ godzina_zakonczenia }}
+                                    {% else %}
+                                        Brak danych
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+<!--------------------------------------------------------------------GRUPY-------------------------------------------------------------------->
+    <div class="content {% if selected_view == 'grupy' %}visible{% endif %}">
+        <div class="groups">
+
+            <form method="POST" action="/dashboard_wykladowca">
+            <input type="hidden" name="form_id" value="grupy">
+            {% for przedmiot in przedmioty %}
+                {% if przedmiot.wykladowca_id | int == user.id %}
+                    {% for grupa in grupy %}
+                        {% if przedmiot.id | string in grupa.przedmioty %}
+
+                        <button name="groups" class="{% if groups | int == grupa.id %}grupa_wybrana{% endif %}{% if grupa_id | int == grupa.id %}grupa_wybrana{% endif %}" value="{{ grupa.id }}" type="submit"><b>{{ grupa.nazwa }}</b> <br>{{ przedmiot.nazwa }}</button>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+            </form>
+
+    </div>
+
+
+
+    {% for przedmiot in przedmioty %}
+        {% if przedmiot.wykladowca_id | int == user.id %}
+            {% for grupa in grupy %}
+                {% if przedmiot.id | string in grupa.przedmioty %}
+
+                    <div class="content {% if groups | int == grupa.id %}grupa{% endif %}   {% if grupa_id | int == grupa.id %}grupa{% endif %}">
+
+                        <h3>Grupa: {{ grupa.nazwa }} <br> Przedmiot: {{ przedmiot.nazwa }}</h3>
+                
+                        {% if przedmiot.egzamin == "Tak" %}
+        
+                            {% for egzamin in egzaminy %}
+        
+                                {% if egzamin.grupa_id | int  == grupa.id and egzamin.przedmiot_id | int == przedmiot.id %}
+        
+                                    <h4>Aktualna data egzaminu to: {{ egzamin.data | replace('T', ' ')}}</h4>
+        
+                                {%endif%}
+        
+                            {% endfor %}
+        
+        
+                        <form method="POST" action="/add_egzamin">
+                            <label for="data_egzaminu">Data i godzina egzaminu:</label><br>
+                            <input type="datetime-local" id="data_egzaminu" name="data_egzaminu" required><br>                       
+                            <input type="hidden" name="przedmiot_id" value="{{ przedmiot.id }}">
+                            <input type="hidden" name="grupa_id" value="{{ grupa.id }}">
+                            <input type="hidden" name="wykladowca_id" value="{{ session['user_id'] }}"><br>
+                            <button type="submit">Dodaj egzamin</button>
+                        </form>
+        
+                        {% else %}
+        
+                            <h3>Ten przedmiot nie posiada egzaminu</h3>
+        
+                        {% endif %}
+                        <table border="1" cellpadding="5" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Imię</th>
+                                    <th>Nazwisko</th>
+                                    <th>Email</th>
+                                    <th>Ocena</th>
+                                    <th>Dodaj/Zmień Ocenę</th>
+                                    {% if przedmiot.egzamin == "Tak" %}
+                                    
+        
+                                    <th>Wynik z egzaminu</th>
+                                    <th>Dodaj/Zmień wynik z egzaminu (w procentach)</th>
+                                    {%endif%}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for user in users %}
+                                    {% if user.grupa | int == grupa.id %}
+                                        <tr>
+                                            <td>{{ user.imie }}</td>
+                                            <td>{{ user.nazwisko }}</td>
+                                            <td>{{ user.email }}</td>
+                                            <td>
+                                                {% for ocena in oceny %}
+                                                    {% if ocena.student_id | int == user.id and ocena.przedmiot_id | int == przedmiot.id %}
+                                                        {{ ocena.ocena }}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </td>
+                                            <td>
+                                                <form method="POST" action="/add_ocena">
+                                                    <select name="ocena" required>
+                                                            <option value="" selected disabled>Wybierz ocenę</option>
+                                                        {% for ocena_value in range(2, 6) %}
+                                                            <option value="{{ ocena_value }}">{{ ocena_value }}</option>
+                                                        {% endfor %}
+                                                    </select>
+                                                    <input type="hidden" name="student_id" value="{{ user.id }}">
+                                                    <input type="hidden" name="przedmiot_id" value="{{ przedmiot.id }}">
+                                                    <input type="hidden" name="wykladowca_id" value="{{ session['user_id'] }}">
+                                                    <input type="hidden" name="view" value="grupy">
+                                                    <input type="hidden" name="grupa_id" value="{{ grupa.id }}">
+                                                    <button type="submit">Zapisz</button>
+                                                </form>
+                                            </td>
+        
+        
+        
+                                            {% if przedmiot.egzamin == "Tak" %}
+        
+                                            <td>
+                                                {% for egzamin in egzaminy %}
+                                                    {% for wynik in egzaminy_wyniki %}
+                                                        {% if wynik and wynik.egzamin_id | int == egzamin.id and wynik.student_id | int == user.id %}
+                                                            {{ wynik.wynik }}%
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                {% endfor %}
+        
+                                            </td>
+                                            <td>
+                                                {% for egzamin in egzaminy %}
+                                                    {% if egzamin.grupa_id | int == grupa.id and egzamin.przedmiot_id | int == przedmiot.id %}
+                                                        <form method="POST" action="/add_egzamin_wynik">
+                                                            <input type="number" name="wynik" id="wynik" min="0" max="100" required>
+                                                            <input type="hidden" name="student_id" value="{{ user.id }}">
+                                                            <input type="hidden" name="egzamin_id" value="{{ egzamin.id }}">
+                                                            <input type="hidden" name="view" value="grupy">
+                                                            <input type="hidden" name="grupa_id" value="{{ grupa.id }}">
+                                                            <button type="submit">Zapisz</button>
+                                                        </form>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </td>
+                                            {%endif%}
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+    </div>   
+
+
+<!--------------------------------------------------------------------KALENDARZ-------------------------------------------------------------------->
+    <div class="content {% if selected_view == 'calendar' %}visible{% endif %}">
+        <h2>Kalendarz - {{ month_name }} {{ year }}</h2>
+
+            <form method="POST">
+                <div class="month-nav">
+                    <button name="action" value="prev">Poprzedni miesiąc</button>
+                    <button name="action" value="next">Następny miesiąc</button>
+                </div>
+                <input type="hidden" name="year" value="{{ year }}">
+                <input type="hidden" name="month" value="{{ month }}">
+            </form>
+        
+            {% if month_calendar %}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pon</th>
+                            <th>Wt</th>
+                            <th>Śr</th>
+                            <th>Czw</th>
+                            <th>Pt</th>
+                            <th>Sob</th>
+                            <th>Ndz</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for week in month_calendar %}
+                        <tr>
+                            {% for day in week %}
+                            <td>
+                                {% if day != 0 %}
+                                    <strong>{{ day }}</strong>
+                                    {% set zajecie_data = year ~ '-' ~ ('0' ~ month if month < 10 else month) ~ '-' ~ ('0' ~ day if day < 10 else day) %}
+                                        {% if zajecie_data in zajecia_sorted %}
+                                            {% for zajecie in zajecia_sorted[zajecie_data] %}
+                                                {%for grupa in grupy%}
+                                                    {% if grupa.id == zajecie.grupa_id | int %}
+                                                        {% for przedmiot in przedmioty %}
+                                                            {% if przedmiot.id == zajecie.przedmiot_id | int %}
+                                                                {% if przedmiot.wykladowca_id | int == user.id %}
+                                                                <div class="event">
+                                                                    <div class="event-info">
+                                                                        <span class="event-name">
+                                                                            <h3>Zajęcia</h3>
+                                                                            <b>{{ zajecie.rozpoczecie[11:16] }} - {{ zajecie.zakonczenie[11:16] }}</b> <br>
+                                                                            {{ przedmiot.nazwa }}<br>
+                                                                            <i>{{ zajecie.rodzaj }}</i>
+
+                                                                        </span>
+                                                                        <div class="additional-info">
+                                                                            <strong>Sala:</strong> {{ zajecie.sala }}<br>
+                                                                        
+                                                                            <strong>Grupa:</strong> 
+                                                                            {% for wykladowca in users %}
+                                                                                {% if wykladowca.id == przedmiot.wykladowca_id | int %}
+                                                                                    {{ grupa.nazwa }} <br>
+                                                                                    <strong>Rodzaj:</strong> 
+                                                                                    {{ zajecie.rodzaj }}
+                                                                                {% endif %}
+                                                                            {% endfor %}
+                                                                            <br>
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>
+                                                                {% endif %}
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                    {% endif %}
+                                                {%endfor%}
+                                            {% endfor %}
+                                        {% endif %}
+
+
+                                        {% set egzamin_data = year ~ '-' ~ ('0' ~ month if month < 10 else month) ~ '-' ~ ('0' ~ day if day < 10 else day) %}
+                                            {% if egzamin_data in egzaminy_sorted %}
+                                                {% for egzamin in egzaminy_sorted[egzamin_data] %}
+                                                    {%for grupa in grupy%}
+                                                        {% if grupa.id == egzamin.grupa_id | int %}
+                                                            {% for przedmiot in przedmioty %}
+                                                                {% if przedmiot.id == egzamin.przedmiot_id | int %}
+                                                                    {% if przedmiot.wykladowca_id | int == user.id %}
+                                                                    <div class="exam">
+                                                                        <div class="exam-info">
+                                                                            <span class="exam-name">
+                                                                                <h3>Egzamin</h3>
+                                                                                <b>{{ egzamin.data[11:16] }}</b> <br>
+                                                                                {{ przedmiot.nazwa }}
+                                                                            </span>
+                                                                            <div class="additional-info">
+                                                                                <strong>Grupa:</strong> 
+                                                                                {% for wykladowca in users %}
+                                                                                    {% if wykladowca.id == przedmiot.wykladowca_id | int %}
+                                                                                        {{ grupa.nazwa }}
+                                                                                    {% endif %}
+                                                                                {% endfor %}
+                                                                                <br>
+                                                                                <form method="POST" action="{{ url_for('geekoczelnia.delete_egzamin', egzamin_id=egzamin.id) }}" style="display: inline;">
+                                                                                    <button type="submit" onclick="return confirm('Czy na pewno chcesz usunąć ten egzamin?')">Usuń</button>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                    {% endif %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        {% endif %}
+                                                    {%endfor%}
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endif %}
+                                    </td>
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+    </div>
+
+
+<!--------------------------------------------------------------------WIADOMOŚCI-------------------------------------------------------------------->
+<div class="content {% if selected_view == 'wiadomosci' %}visible{% endif %}">
+
+    <div class="wiadomosci">
+
+        <form method="POST" action="/dashboard_wykladowca">
+        <input type="hidden" name="form_id" value="wiadomosci">
+        <button name="wiadomosci" class="{% if wiadomosci == 'odebrane' %}wiadomosc_wybrana{% endif %}" value="odebrane" type="submit" ><h2>Twoje wiadomości</h2></button>
+        <button name="wiadomosci" class="{% if wiadomosci == 'wyslane' %}wiadomosc_wybrana{% endif %}" value="wyslane" type="submit" ><h2>Wysłane wiadomości</h2></button>
+        <button name="wiadomosci" class="{% if wiadomosci == 'wyslij_wiadomosc' %}wiadomosc_wybrana{% endif %}" value="wyslij_wiadomosc" type="submit" >Wyślij wiadomość</button>
+        </form><br>
+
+        <ul class="content {% if wiadomosci == 'odebrane' %}lista_wiadomosci{% endif %}">
+            <form method="POST" action="/dashboard_wykladowca">
+                <input type="hidden" name="form_id" value="odebrane">
+                <input type="hidden" name="wiadomosci" value="odebrane">
+                {% for message in messages|reverse %}
+                            <li>
+                                <button name="wiadomosci_id_odebranej" class="{% if wiadomosci_id_odebranej | int == message.id %}wiadomosc_wybrana{% endif %}" value="{{ message.id }}" type="submit">{{message.date}} <br> <b> Od: {{message.sender}}</b><br><b>{{ message.title }}</b></button>
+                            </li>
+                {% endfor %}
+            </form>
+        
+        </ul>
+
+        <ul class="content {% if wiadomosci == 'wyslane' %}lista_wiadomosci{% endif %}">
+            <form method="POST" action="/dashboard_wykladowca">
+                <input type="hidden" name="form_id" value="wyslane">
+                <input type="hidden" name="wiadomosci" value="wyslane">
+                {% for message_sent in sent_messages|reverse %}
+                            <li>
+                                <button name="wiadomosci_id_wyslanej" class="{% if wiadomosci_id_wyslanej | int == message_sent.id %}wiadomosc_wybrana{% endif %}" value="{{ message_sent.id }}" type="submit">{{message_sent.date}} <br> <b> Do: {{message_sent.recipient}}</b><br><b>{{ message_sent.title }}</b></button>
+                            </li>
+                {% endfor %}
+            </form>
+        </ul>
+        
+            
+
+    </div>
+    
+    {% for message in messages %}
+    
+    <div class="content {% if wiadomosci_id_odebranej | int == message.id %}wiadomosc{% endif %}">
+
+        <h2>{{ message.title }}</h2>
+        <h4>{{ message.date }} </h4>
+        <h4>Od: {{ message.sender }}</h4>
+        <h4>Do: {{ message.recipient }}</h4>
+
+        {{ message.message|replace('\n', '<br>')|safe }}
+        
+    </div>
+    {% endfor %}
+
+
+    {% for message_sent in sent_messages %}
+    
+    <div class="content {% if wiadomosci_id_wyslanej | int == message_sent.id %}wiadomosc{% endif %}">
+
+        <h2>{{ message_sent.title }}</h2>
+        <h4>{{ message_sent.date }} </h4>
+        <h4>Od: {{ message_sent.sender }}</h4>
+        <h4>Do: {{ message_sent.recipient }}</h4>
+
+        {{ message_sent.message|replace('\n', '<br>')|safe }}
+        
+    </div>
+    {% endfor %}
+
+
+
+    <br>
+
+    <div class="content {% if wiadomosci == 'wyslij_wiadomosc' %}wiadomosc{% endif %}">
+    <form method="POST" action="/send_message">
+        <label for="recipent">Email odbiorcy</label><br>
+        <input type="text" name="recipent" id="recipent"><br>
+        <label for="title">Tytuł</label><br>
+        <input type="text" name="title" id="title"><br>
+        <input type="hidden" name="sender" value="{{ user.email }}">
+        <label for="message">Wiadomość</label><br>
+        <textarea name="message" rows="8" cols="50" id="message"></textarea><br>
+        <button type="submit">Wyślij</button>
+    </form>
+    </div>
+    
+    
+</div>
+<!--------------------------------------------------------------------EDYCJA DANYCH-------------------------------------------------------------------->
+    <div class="content {% if selected_view == 'dane' %}visible{% endif %}">
+        
+        <h2>Zaktualizuj zdjęcie</h2>
+        <form action="/upload_picture" method="post" enctype="multipart/form-data">
+            <input type="file" name="file"><br>
+            <button type="submit">Prześlij</button>
+        </form>
+
+        <h2>Zmień hasło</h2>
+        <form action="/change_password" method="post">
+            <label for="current_password">Aktualne hasło</label><br>
+            <input type="password" name="current_password" id="current_password"><br>
+            <label for="new_password">Nowe hasło</label><br>
+            <input type="password" name="new_password" id="new_password"><br>
+            <button type="submit">Zmień hasło</button>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
+

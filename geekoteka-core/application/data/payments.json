@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 1,
+        "tytuł": "Czesne",
+        "kwota": -950
+    },
+    {
+        "id": 2,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 2,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 3,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 3,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 4,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 4,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 5,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 5,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 6,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 6,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 7,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 7,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 8,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 8,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 9,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 9,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 10,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 10,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 11,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 11,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 12,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 12,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 13,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 13,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 14,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 14,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 15,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 15,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    },
+    {
+        "id": 16,
+        "date": "26/03/2025 20:04:15",
+        "id_konta": 16,
+        "tytuł": "Pobranie środków z konta",
+        "kwota": -950
+    }
+]

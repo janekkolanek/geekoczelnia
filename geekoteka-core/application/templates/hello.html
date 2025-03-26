@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEEKoczelnia</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/hello.css">
+    <link rel="icon" href="/static/css/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="panel">
+        <h1>Witaj na GEEKoczelni</h1>
+
+        <div class="content {% if selected_view == 'login' %}visible{% endif %}">
+            <form method="POST" action="/login">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="haslo">Hasło:</label>
+                <input type="password" id="haslo" name="haslo" required><br>
+
+                <input type="submit" value="Zaloguj">
+            </form>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <ul class="flash-messages">
+                        {% for category, message in messages %}
+                            <li class="{{ category }}">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
+            <form method="POST" action="/">
+                <button name="view" value="rejestracja_student" type="submit">Zarejestruj się jako student</button>
+                <button name="view" value="rejestracja_wykladowca" type="submit">Zarejestruj się jako wykładowca</button>
+            </form>
+        </div>
+
+        <div class="content {% if selected_view == 'rejestracja_student' %}visible{% endif %}">
+            <h1>Rejestracja Studenta</h1>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <ul class="flash-messages">
+                        {% for category, message in messages %}
+                            <li class="{{ category }}">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
+            <form method="POST" action="/register_student">
+                <label for="imie">Imię:</label>
+                <input type="text" id="imie" name="imie" required><br>
+
+                <label for="nazwisko">Nazwisko:</label>
+                <input type="text" id="nazwisko" name="nazwisko" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="haslo">Hasło:</label>
+                <input type="password" id="haslo" name="haslo" required><br>
+
+                <input type="submit" value="Zarejestruj">
+            </form>
+
+            <form method="POST" action="/">
+                <button name="view" value="login" type="submit">Logowanie</button>
+                <button name="view" value="rejestracja_wykladowca" type="submit">Zarejestruj się jako wykładowca</button>
+            </form>
+        </div>
+
+        <div class="content {% if selected_view == 'rejestracja_wykladowca' %}visible{% endif %}">
+            <h1>Rejestracja wykładowcy</h1>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <ul class="flash-messages">
+                        {% for category, message in messages %}
+                            <li class="{{ category }}">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
+            <form method="POST" action="/register_wykladowca">
+                <label for="imie">Imię:</label>
+                <input type="text" id="imie" name="imie" required><br>
+
+                <label for="nazwisko">Nazwisko:</label>
+                <input type="text" id="nazwisko" name="nazwisko" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="haslo">Hasło:</label>
+                <input type="password" id="haslo" name="haslo" required><br>
+
+                <input type="submit" value="Zarejestruj">
+            </form>
+
+            <form method="POST" action="/">
+                <button name="view" value="login" type="submit">Logowanie</button>
+                <button name="view" value="rejestracja_student" type="submit">Zarejestruj się jako student</button>
+            </form>
+        </div>
+
+        <div class="contact">
+            <form method="POST" action="/contact">
+                <button type="submit">Kontakt</button>
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>

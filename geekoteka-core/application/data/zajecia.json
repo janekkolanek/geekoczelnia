@@ -1,0 +1,965 @@
+[
+    {
+        "id": 1,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-03T10:00:00",
+        "zakonczenie": "2025-03-03T11:30:00"
+    },
+    {
+        "id": 2,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-10T10:00:00",
+        "zakonczenie": "2025-03-10T11:30:00"
+    },
+    {
+        "id": 3,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-17T10:00:00",
+        "zakonczenie": "2025-03-17T11:30:00"
+    },
+    {
+        "id": 4,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-24T10:00:00",
+        "zakonczenie": "2025-03-24T11:30:00"
+    },
+    {
+        "id": 5,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-31T10:00:00",
+        "zakonczenie": "2025-03-31T11:30:00"
+    },
+    {
+        "id": 6,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-07T10:00:00",
+        "zakonczenie": "2025-04-07T11:30:00"
+    },
+    {
+        "id": 7,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-14T10:00:00",
+        "zakonczenie": "2025-04-14T11:30:00"
+    },
+    {
+        "id": 8,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-21T10:00:00",
+        "zakonczenie": "2025-04-21T11:30:00"
+    },
+    {
+        "id": 9,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-28T10:00:00",
+        "zakonczenie": "2025-04-28T11:30:00"
+    },
+    {
+        "id": 10,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-05T10:00:00",
+        "zakonczenie": "2025-05-05T11:30:00"
+    },
+    {
+        "id": 11,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-12T10:00:00",
+        "zakonczenie": "2025-05-12T11:30:00"
+    },
+    {
+        "id": 12,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-19T10:00:00",
+        "zakonczenie": "2025-05-19T11:30:00"
+    },
+    {
+        "id": 13,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-26T10:00:00",
+        "zakonczenie": "2025-05-26T11:30:00"
+    },
+    {
+        "id": 14,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-06-02T10:00:00",
+        "zakonczenie": "2025-06-02T11:30:00"
+    },
+    {
+        "id": 15,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G101",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-06-09T10:00:00",
+        "zakonczenie": "2025-06-09T11:30:00"
+    },
+    {
+        "id": 16,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-03T12:00:00",
+        "zakonczenie": "2025-03-03T13:30:00"
+    },
+    {
+        "id": 17,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-10T12:00:00",
+        "zakonczenie": "2025-03-10T13:30:00"
+    },
+    {
+        "id": 18,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-17T12:00:00",
+        "zakonczenie": "2025-03-17T13:30:00"
+    },
+    {
+        "id": 19,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-24T12:00:00",
+        "zakonczenie": "2025-03-24T13:30:00"
+    },
+    {
+        "id": 20,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-31T12:00:00",
+        "zakonczenie": "2025-03-31T13:30:00"
+    },
+    {
+        "id": 21,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-07T12:00:00",
+        "zakonczenie": "2025-04-07T13:30:00"
+    },
+    {
+        "id": 22,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-14T12:00:00",
+        "zakonczenie": "2025-04-14T13:30:00"
+    },
+    {
+        "id": 23,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-21T12:00:00",
+        "zakonczenie": "2025-04-21T13:30:00"
+    },
+    {
+        "id": 24,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-28T12:00:00",
+        "zakonczenie": "2025-04-28T13:30:00"
+    },
+    {
+        "id": 25,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-05T12:00:00",
+        "zakonczenie": "2025-05-05T13:30:00"
+    },
+    {
+        "id": 26,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-12T12:00:00",
+        "zakonczenie": "2025-05-12T13:30:00"
+    },
+    {
+        "id": 27,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-19T12:00:00",
+        "zakonczenie": "2025-05-19T13:30:00"
+    },
+    {
+        "id": 28,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-26T12:00:00",
+        "zakonczenie": "2025-05-26T13:30:00"
+    },
+    {
+        "id": 29,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-06-02T12:00:00",
+        "zakonczenie": "2025-06-02T13:30:00"
+    },
+    {
+        "id": 30,
+        "przedmiot_id": "1",
+        "grupa_id": "1",
+        "sala": "G102",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-06-09T12:00:00",
+        "zakonczenie": "2025-06-09T13:30:00"
+    },
+    {
+        "id": 31,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G103",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-04T12:00:00",
+        "zakonczenie": "2025-03-04T13:30:00"
+    },
+    {
+        "id": 32,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G103",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-18T12:00:00",
+        "zakonczenie": "2025-03-18T13:30:00"
+    },
+    {
+        "id": 33,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G103",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-01T12:00:00",
+        "zakonczenie": "2025-04-01T13:30:00"
+    },
+    {
+        "id": 34,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G103",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-15T12:00:00",
+        "zakonczenie": "2025-04-15T13:30:00"
+    },
+    {
+        "id": 35,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G103",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-29T12:00:00",
+        "zakonczenie": "2025-04-29T13:30:00"
+    },
+    {
+        "id": 36,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G103",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-13T12:00:00",
+        "zakonczenie": "2025-05-13T13:30:00"
+    },
+    {
+        "id": 37,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G103",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-27T12:00:00",
+        "zakonczenie": "2025-05-27T13:30:00"
+    },
+    {
+        "id": 38,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G103",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-06-10T12:00:00",
+        "zakonczenie": "2025-06-10T13:30:00"
+    },
+    {
+        "id": 39,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G104",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-04T14:00:00",
+        "zakonczenie": "2025-03-04T15:30:00"
+    },
+    {
+        "id": 40,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G104",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-18T14:00:00",
+        "zakonczenie": "2025-03-18T15:30:00"
+    },
+    {
+        "id": 41,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G104",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-01T14:00:00",
+        "zakonczenie": "2025-04-01T15:30:00"
+    },
+    {
+        "id": 42,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G104",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-15T14:00:00",
+        "zakonczenie": "2025-04-15T15:30:00"
+    },
+    {
+        "id": 43,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G104",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-29T14:00:00",
+        "zakonczenie": "2025-04-29T15:30:00"
+    },
+    {
+        "id": 44,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G104",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-13T14:00:00",
+        "zakonczenie": "2025-05-13T15:30:00"
+    },
+    {
+        "id": 45,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G104",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-27T14:00:00",
+        "zakonczenie": "2025-05-27T15:30:00"
+    },
+    {
+        "id": 46,
+        "przedmiot_id": "2",
+        "grupa_id": "2",
+        "sala": "G104",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-06-10T14:00:00",
+        "zakonczenie": "2025-06-10T15:30:00"
+    },
+    {
+        "id": 47,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-05T09:00:00",
+        "zakonczenie": "2025-03-05T10:30:00"
+    },
+    {
+        "id": 48,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-12T09:00:00",
+        "zakonczenie": "2025-03-12T10:30:00"
+    },
+    {
+        "id": 49,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-19T09:00:00",
+        "zakonczenie": "2025-03-19T10:30:00"
+    },
+    {
+        "id": 50,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-26T09:00:00",
+        "zakonczenie": "2025-03-26T10:30:00"
+    },
+    {
+        "id": 51,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-02T09:00:00",
+        "zakonczenie": "2025-04-02T10:30:00"
+    },
+    {
+        "id": 52,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-09T09:00:00",
+        "zakonczenie": "2025-04-09T10:30:00"
+    },
+    {
+        "id": 53,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-16T09:00:00",
+        "zakonczenie": "2025-04-16T10:30:00"
+    },
+    {
+        "id": 54,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-23T09:00:00",
+        "zakonczenie": "2025-04-23T10:30:00"
+    },
+    {
+        "id": 55,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-30T09:00:00",
+        "zakonczenie": "2025-04-30T10:30:00"
+    },
+    {
+        "id": 56,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-07T09:00:00",
+        "zakonczenie": "2025-05-07T10:30:00"
+    },
+    {
+        "id": 57,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-14T09:00:00",
+        "zakonczenie": "2025-05-14T10:30:00"
+    },
+    {
+        "id": 58,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-21T09:00:00",
+        "zakonczenie": "2025-05-21T10:30:00"
+    },
+    {
+        "id": 59,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-28T09:00:00",
+        "zakonczenie": "2025-05-28T10:30:00"
+    },
+    {
+        "id": 60,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-06-04T09:00:00",
+        "zakonczenie": "2025-06-04T10:30:00"
+    },
+    {
+        "id": 61,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G105",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-06-11T09:00:00",
+        "zakonczenie": "2025-06-11T10:30:00"
+    },
+    {
+        "id": 62,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-05T11:00:00",
+        "zakonczenie": "2025-03-05T12:30:00"
+    },
+    {
+        "id": 63,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-12T11:00:00",
+        "zakonczenie": "2025-03-12T12:30:00"
+    },
+    {
+        "id": 64,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-19T11:00:00",
+        "zakonczenie": "2025-03-19T12:30:00"
+    },
+    {
+        "id": 65,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-26T11:00:00",
+        "zakonczenie": "2025-03-26T12:30:00"
+    },
+    {
+        "id": 66,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-02T11:00:00",
+        "zakonczenie": "2025-04-02T12:30:00"
+    },
+    {
+        "id": 67,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-09T11:00:00",
+        "zakonczenie": "2025-04-09T12:30:00"
+    },
+    {
+        "id": 68,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-16T11:00:00",
+        "zakonczenie": "2025-04-16T12:30:00"
+    },
+    {
+        "id": 69,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-23T11:00:00",
+        "zakonczenie": "2025-04-23T12:30:00"
+    },
+    {
+        "id": 70,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-30T11:00:00",
+        "zakonczenie": "2025-04-30T12:30:00"
+    },
+    {
+        "id": 71,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-07T11:00:00",
+        "zakonczenie": "2025-05-07T12:30:00"
+    },
+    {
+        "id": 72,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-14T11:00:00",
+        "zakonczenie": "2025-05-14T12:30:00"
+    },
+    {
+        "id": 73,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-21T11:00:00",
+        "zakonczenie": "2025-05-21T12:30:00"
+    },
+    {
+        "id": 74,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-28T11:00:00",
+        "zakonczenie": "2025-05-28T12:30:00"
+    },
+    {
+        "id": 75,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-06-04T11:00:00",
+        "zakonczenie": "2025-06-04T12:30:00"
+    },
+    {
+        "id": 76,
+        "przedmiot_id": "5",
+        "grupa_id": "3",
+        "sala": "G106",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-06-11T11:00:00",
+        "zakonczenie": "2025-06-11T12:30:00"
+    },
+    {
+        "id": 77,
+        "przedmiot_id": "6",
+        "grupa_id": "4",
+        "sala": "G201",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-03T15:00:00",
+        "zakonczenie": "2025-03-03T16:30:00"
+    },
+    {
+        "id": 78,
+        "przedmiot_id": "6",
+        "grupa_id": "4",
+        "sala": "G201",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-17T15:00:00",
+        "zakonczenie": "2025-03-17T16:30:00"
+    },
+    {
+        "id": 79,
+        "przedmiot_id": "6",
+        "grupa_id": "4",
+        "sala": "G201",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-31T15:00:00",
+        "zakonczenie": "2025-03-31T16:30:00"
+    },
+    {
+        "id": 80,
+        "przedmiot_id": "6",
+        "grupa_id": "4",
+        "sala": "G201",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-14T15:00:00",
+        "zakonczenie": "2025-04-14T16:30:00"
+    },
+    {
+        "id": 81,
+        "przedmiot_id": "6",
+        "grupa_id": "4",
+        "sala": "G201",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-28T15:00:00",
+        "zakonczenie": "2025-04-28T16:30:00"
+    },
+    {
+        "id": 82,
+        "przedmiot_id": "6",
+        "grupa_id": "4",
+        "sala": "G201",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-12T15:00:00",
+        "zakonczenie": "2025-05-12T16:30:00"
+    },
+    {
+        "id": 83,
+        "przedmiot_id": "6",
+        "grupa_id": "4",
+        "sala": "G201",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-26T15:00:00",
+        "zakonczenie": "2025-05-26T16:30:00"
+    },
+    {
+        "id": 84,
+        "przedmiot_id": "6",
+        "grupa_id": "4",
+        "sala": "G201",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-06-09T15:00:00",
+        "zakonczenie": "2025-06-09T16:30:00"
+    },
+    {
+        "id": 85,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-06T13:30:00",
+        "zakonczenie": "2025-03-06T15:00:00"
+    },
+    {
+        "id": 86,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-13T13:30:00",
+        "zakonczenie": "2025-03-13T15:00:00"
+    },
+    {
+        "id": 87,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-20T13:30:00",
+        "zakonczenie": "2025-03-20T15:00:00"
+    },
+    {
+        "id": 88,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-03-27T13:30:00",
+        "zakonczenie": "2025-03-27T15:00:00"
+    },
+    {
+        "id": 89,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-03T13:30:00",
+        "zakonczenie": "2025-04-03T15:00:00"
+    },
+    {
+        "id": 90,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-10T13:30:00",
+        "zakonczenie": "2025-04-10T15:00:00"
+    },
+    {
+        "id": 91,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-17T13:30:00",
+        "zakonczenie": "2025-04-17T15:00:00"
+    },
+    {
+        "id": 92,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-04-24T13:30:00",
+        "zakonczenie": "2025-04-24T15:00:00"
+    },
+    {
+        "id": 93,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-01T13:30:00",
+        "zakonczenie": "2025-05-01T15:00:00"
+    },
+    {
+        "id": 94,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-08T13:30:00",
+        "zakonczenie": "2025-05-08T15:00:00"
+    },
+    {
+        "id": 95,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-15T13:30:00",
+        "zakonczenie": "2025-05-15T15:00:00"
+    },
+    {
+        "id": 96,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-22T13:30:00",
+        "zakonczenie": "2025-05-22T15:00:00"
+    },
+    {
+        "id": 97,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-05-29T13:30:00",
+        "zakonczenie": "2025-05-29T15:00:00"
+    },
+    {
+        "id": 98,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-06-05T13:30:00",
+        "zakonczenie": "2025-06-05T15:00:00"
+    },
+    {
+        "id": 99,
+        "przedmiot_id": "9",
+        "grupa_id": "5",
+        "sala": "G303",
+        "rodzaj": "Wykład",
+        "rozpoczecie": "2025-06-12T13:30:00",
+        "zakonczenie": "2025-06-12T15:00:00"
+    },
+    {
+        "id": 100,
+        "przedmiot_id": "9",
+        "grupa_id": "6",
+        "sala": "G110",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-07T12:45:00",
+        "zakonczenie": "2025-03-07T14:15:00"
+    },
+    {
+        "id": 101,
+        "przedmiot_id": "9",
+        "grupa_id": "6",
+        "sala": "G110",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-03-21T12:45:00",
+        "zakonczenie": "2025-03-21T14:15:00"
+    },
+    {
+        "id": 102,
+        "przedmiot_id": "9",
+        "grupa_id": "6",
+        "sala": "G110",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-04T12:45:00",
+        "zakonczenie": "2025-04-04T14:15:00"
+    },
+    {
+        "id": 103,
+        "przedmiot_id": "9",
+        "grupa_id": "6",
+        "sala": "G110",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-04-18T12:45:00",
+        "zakonczenie": "2025-04-18T14:15:00"
+    },
+    {
+        "id": 104,
+        "przedmiot_id": "9",
+        "grupa_id": "6",
+        "sala": "G110",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-02T12:45:00",
+        "zakonczenie": "2025-05-02T14:15:00"
+    },
+    {
+        "id": 105,
+        "przedmiot_id": "9",
+        "grupa_id": "6",
+        "sala": "G110",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-16T12:45:00",
+        "zakonczenie": "2025-05-16T14:15:00"
+    },
+    {
+        "id": 106,
+        "przedmiot_id": "9",
+        "grupa_id": "6",
+        "sala": "G110",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-05-30T12:45:00",
+        "zakonczenie": "2025-05-30T14:15:00"
+    },
+    {
+        "id": 107,
+        "przedmiot_id": "9",
+        "grupa_id": "6",
+        "sala": "G110",
+        "rodzaj": "Laboratorium",
+        "rozpoczecie": "2025-06-13T12:45:00",
+        "zakonczenie": "2025-06-13T14:15:00"
+    }
+]

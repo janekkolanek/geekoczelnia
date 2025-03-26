@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "egzamin_id": "1",
+        "student_id": "8",
+        "wynik": "50"
+    },
+    {
+        "id": 2,
+        "egzamin_id": "1",
+        "student_id": "9",
+        "wynik": "74"
+    },
+    {
+        "id": 3,
+        "egzamin_id": "1",
+        "student_id": "10",
+        "wynik": "83"
+    }
+]

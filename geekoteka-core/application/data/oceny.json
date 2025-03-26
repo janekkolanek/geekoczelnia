@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "student_id": "8",
+        "wykladowca_id": "2",
+        "przedmiot_id": "1",
+        "ocena": "3"
+    },
+    {
+        "id": 2,
+        "student_id": "9",
+        "wykladowca_id": "2",
+        "przedmiot_id": "1",
+        "ocena": "4"
+    },
+    {
+        "id": 3,
+        "student_id": "10",
+        "wykladowca_id": "2",
+        "przedmiot_id": "1",
+        "ocena": "4"
+    }
+]

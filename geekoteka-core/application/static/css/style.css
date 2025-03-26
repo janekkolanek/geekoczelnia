@@ -1,0 +1,436 @@
+
+body {
+    background-color: #898e74;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+header {
+    background-color: #000101;
+    color: rgba(42, 201, 2, 0.555);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    max-width: 100vw;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    height: 5vh; 
+}
+
+.info {
+    text-align: left;
+    flex: 1;
+    font-size: 18px;
+}
+
+.info img {
+    max-height: 5vh;
+    width: 10vw;
+}
+
+
+.flash {
+    text-align: right;
+    max-width: 600px; 
+    width: auto; 
+    flex-shrink: 0; 
+    max-height: 3vh; 
+    overflow: hidden; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+}
+
+
+.panel {
+    background-color: #000000e7;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(42, 201, 2, 0.555);
+    max-height: 88.5vh;
+    min-height: 88.5vh;
+    overflow-y: auto;
+}
+
+
+.avatar {
+    min-width: 110px;
+    min-height: 150px;
+    width: 110px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+h1 {
+    font-size: 20px;
+    color: rgba(42, 201, 2, 0.555);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    color: white;
+}
+
+
+.panel form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wiadomosci form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgba(42, 201, 2, 0.555);
+    background-color: #000000e7;
+    border: 1px solid rgba(42, 201, 2, 0.555);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+form > button {
+    background-color: #000000e7;
+}
+
+form > button:hover {
+    background-color: #313030e7;
+}
+
+button:hover {
+    background-color: #313030e7;
+}
+
+input[type="submit"], input[type="text"], input[type="number"], input[type="file"], input[type="datetime-local"], input[type="password"] {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgba(42, 201, 2, 0.555);
+    background-color: #181818e7;
+    border: 1px solid rgba(42, 201, 2, 0.555);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"], input[type="text"], input[type="number"], input[type="password"] {
+    width: 160px;
+}
+
+
+textarea {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgba(42, 201, 2, 0.555);
+    background-color: #181818e7;
+    border: 1px solid rgba(42, 201, 2, 0.555);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+    margin-bottom: 5px;
+}
+
+
+input[type="file"] {
+    width: 250px;
+}
+
+input[type="datetime-local"] {
+    width: 160px;
+}
+
+input[type="submit"]:hover, input[type="text"]:hover, input[type="number"]:hover, input[type="file"]:hover, input[type="datetime-local"]:hover {
+    background-color: #313030e7;
+}
+
+form > select {
+    width: 200px;
+}
+
+
+
+.flash-messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: auto; 
+}
+
+.flash-messages li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;  
+    word-wrap: break-word; 
+}
+
+.flash-messages li.success {
+    background-color: #28a745;
+    color: white;
+}
+
+.flash-messages li.error {
+    background-color: #dc3545;
+    color: white;
+}
+
+.flash-messages li.info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.flash-messages li.warning {
+    background-color: #ffc107;
+    color: black;
+}
+.content {
+    display: none;
+}
+
+.visible {
+    display: block;
+    flex: 1;
+    background-color: #000000e7;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgba(42, 201, 2, 0.555);
+    max-height: 89.5vh;
+    min-height: 89.5vh;
+    overflow-y: auto;
+}
+
+.disabled:hover {
+    background-color: #000000e7;
+    cursor: auto;
+}
+
+.groups form {
+    flex-direction: row;
+}
+
+.groups button {
+    color: white;
+    margin: 10px;
+}
+
+.panel p {
+    text-align: center;
+    margin: 5px;
+}
+
+.grupa {
+    display: block;
+    flex: 1;
+    background-color: #000000e7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgba(42, 201, 2, 0.555);
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 10px;
+}
+
+
+.grupa_wybrana {
+    background-color: #313030e7;
+}
+
+.wiadomosc_wybrana {
+    background-color: #313030e7 ;
+}
+
+.wiadomosc {
+    display: block;
+    flex: 2;
+    background-color: #000000e7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    color: rgba(42, 201, 2, 0.555);
+    max-height: 90vh; 
+    overflow-y: auto; 
+    margin: 10px;
+    float: left;
+    width: 55vw;
+}
+
+.wiadomosci {
+    max-height: 90vh;
+    flex: 1;
+    float: left;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.wiadomosci button {
+    width: 300px;
+    
+}
+
+select {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgba(42, 201, 2, 0.555);
+    background-color: #181818e7;
+    border: 1px solid rgba(42, 201, 2, 0.555);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+select:hover {
+    background-color: #313030e7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid rgba(42, 201, 2, 0.555);
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+}
+
+th {
+    background-color: #000000e7;
+}
+
+.event, .exam {
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+.event {
+    background-color: rgba(42, 201, 2, 0.555);
+    color: white;
+}
+
+.exam {
+    background-color: red;
+    color: white;
+}
+
+.event-info, .exam-info {
+    display: block;
+}
+
+.event:hover .additional-info, .exam:hover .additional-info {
+    display: block;
+    opacity: 1;
+}
+
+.event:hover, .exam:hover {
+    z-index: 15;
+}
+
+.additional-info {
+    display: none;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+label[for="title"] {
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(42, 201, 2, 0.555);
+    border-radius: 10px;
+    border: 2px solid #eee;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000e7;
+    border-radius: 10px;
+}
+
+input[type=file]::file-selector-button {
+    padding: 10px;
+    font-size: 14px;
+    color: rgba(42, 201, 2, 0.555);
+    background-color: #000000e7;
+    border: 1px solid rgba(42, 201, 2, 0.555);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    text-align: center;
+}
+
+.lista_wiadomosci {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+    

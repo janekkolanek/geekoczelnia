@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nazwa": "Kryptografia i Bezpieczna Komunikacja",
+        "wykladowca_id": "2",
+        "ects": 5,
+        "opis": "Studenci uczą się podstaw kryptografii klasycznej i współczesnej, w tym algorytmów symetrycznych, asymetrycznych oraz metod uwierzytelniania. Zajęcia obejmują również protokoły komunikacji bezpiecznej, takie jak SSL/TLS, oraz metody ochrony danych przed nieautoryzowanym dostępem.",
+        "egzamin": "Tak"
+    },
+    {
+        "id": 2,
+        "nazwa": "Zarządzanie Ryzykiem w Cyberprzestrzeni",
+        "wykladowca_id": "3",
+        "ects": 4,
+        "opis": "Kurs wprowadza techniki identyfikacji, oceny i zarządzania ryzykiem w systemach informatycznych. Studenci poznają metody tworzenia polityk bezpieczeństwa oraz oceny ryzyka operacyjnego i strategicznego.",
+        "egzamin": "Tak"
+    },
+    {
+        "id": 3,
+        "nazwa": "Testy Penetracyjne i Analiza Zagrożeń",
+        "wykladowca_id": "4",
+        "ects": 6,
+        "opis": "Zajęcia praktyczne, podczas których studenci uczą się przeprowadzać testy penetracyjne, wykrywać podatności systemów oraz symulować scenariusze ataków hakerskich. Kurs obejmuje także analizę powłamaniową i raportowanie.",
+        "egzamin": "Tak"
+    },
+    {
+        "id": 4,
+        "nazwa": "Uczenie Maszynowe i Analiza Predykcyjna",
+        "wykladowca_id": "5",
+        "ects": 6,
+        "opis": "Studenci poznają podstawowe algorytmy uczenia maszynowego, takie jak regresja, drzewa decyzyjne i sieci neuronowe, a także techniki budowania modeli predykcyjnych na podstawie rzeczywistych danych.",
+        "egzamin": "Tak"
+    },
+    {
+        "id": 5,
+        "nazwa": "Przetwarzanie Języka Naturalnego (NLP)",
+        "wykladowca_id": "6",
+        "ects": 4,
+        "opis": "Kurs koncentruje się na metodach analizy tekstu i przetwarzania języka naturalnego, takich jak analiza sentymentu, budowa chatbotów oraz klasyfikacja tekstów. Studenci pracują z bibliotekami NLP, takimi jak SpaCy i Hugging Face.",
+        "egzamin": "Nie"
+    },
+    {
+        "id": 6,
+        "nazwa": "Zarządzanie Danymi w Systemach Big Data",
+        "wykladowca_id": "7",
+        "ects": 5,
+        "opis": "Zajęcia obejmują architekturę systemów Big Data, takie jak Hadoop i Spark, oraz zarządzanie wielkoskalowymi zbiorami danych w środowiskach rozproszonych.",
+        "egzamin": "Tak"
+    },
+    {
+        "id": 7,
+        "nazwa": "Podstawy Robotyki i Mechaniki",
+        "wykladowca_id": "2",
+        "ects": 5,
+        "opis": "Kurs wprowadza podstawowe zagadnienia związane z konstrukcją robotów, kinematyką, dynamiką oraz projektowaniem mechanizmów sterujących. Studenci pracują na modelach robotów mobilnych i manipulatorów.",
+        "egzamin": "Tak"
+    },
+    {
+        "id": 8,
+        "nazwa": "Systemy Wizyjne w Robotyce",
+        "wykladowca_id": "3",
+        "ects": 4,
+        "opis": "Przedmiot koncentruje się na integracji kamer i sensorów wizyjnych w systemach robotycznych. Studenci poznają techniki przetwarzania obrazu, takie jak wykrywanie obiektów i nawigacja wizualna.",
+        "egzamin": "Nie"
+    },
+    {
+        "id": 9,
+        "nazwa": "Algorytmy Sterowania w Systemach Autonomicznych",
+        "wykladowca_id": "4",
+        "ects": 6,
+        "opis": "Studenci uczą się projektowania algorytmów sterowania dla systemów autonomicznych, w tym robotów mobilnych i dronów. Kurs obejmuje również algorytmy planowania ruchu i podejmowania decyzji w dynamicznym środowisku.",
+        "egzamin": "Tak"
+    }
+]

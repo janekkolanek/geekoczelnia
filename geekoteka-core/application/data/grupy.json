@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "nazwa": "CiAR0101",
+        "semestr": "1",
+        "kierunek": "1",
+        "przedmioty": [
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "id": 2,
+        "nazwa": "CiAR0102",
+        "semestr": "1",
+        "kierunek": "2",
+        "przedmioty": [
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "id": 3,
+        "nazwa": "IDiII0101",
+        "semestr": "1",
+        "kierunek": "3",
+        "przedmioty": [
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": 4,
+        "nazwa": "IDiII0102",
+        "semestr": "1",
+        "kierunek": "4",
+        "przedmioty": [
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": 5,
+        "nazwa": "RiSA0101",
+        "semestr": "1",
+        "kierunek": "5",
+        "przedmioty": [
+            "7",
+            "8",
+            "9"
+        ]
+    },
+    {
+        "id": 6,
+        "nazwa": "RiSA0102",
+        "semestr": "1",
+        "kierunek": "6",
+        "przedmioty": [
+            "7",
+            "8",
+            "9"
+        ]
+    }
+]
